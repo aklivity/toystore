@@ -3,7 +3,7 @@
 Verifies anonymous read access to dependencies located in GitHub Packages.
 
 ```
-% ./mvnw dependency resolve
+./mvnw dependency:resolve
 ```
 
 ```
