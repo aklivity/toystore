@@ -1,6 +1,14 @@
-# toystore
+## Setup
+We configure anonymous access to a custom domain for GitHub Maven Packages by
+ - redirecting all requests to `https://maven.packages.aklivity.io/...` to `https://maven.pkg.github.com/aklivity/packages/...`,
+ - creating a machine account [PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) outside the `aklivity` organization with `read:packages` scope only
+ - injecting the machine account PAT in the redirected URL to support anonymous access
 
-Verifies anonymous read access to dependencies located in GitHub Packages.
+Thanks to [redirect.pizza](https://redirect.pizza/) for the assist!
+
+## Verify
+
+Verify anonymous read access to dependencies located in GitHub Packages.
 
 ```
 ./mvnw dependency:resolve
