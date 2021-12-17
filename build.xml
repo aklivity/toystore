@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<project xmlns:ivy="antlib:org.apache.ivy.ant"
+         name="ivy"
+         default="resolve" >
+  <target name="resolve" description="resolve dependencies" >
+    <ivy:convertpom pomFile="pom.xml" ivyFile="ivy.xml" />
+    <ivy:retrieve/>
+  </target>
+</project>
