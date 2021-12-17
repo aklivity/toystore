@@ -6,7 +6,7 @@ We configure anonymous access to a custom domain for GitHub Maven Packages by
 
 Thanks to [redirect.pizza](https://redirect.pizza/) for the assist!
 
-## Verify
+## Verify Apache Maven
 
 Verify anonymous read access to dependencies located in GitHub Packages.
 
@@ -36,3 +36,12 @@ Downloaded from anonymous: https://maven.packages.aklivity.io/io/aklivity/sandbo
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 ```
+
+## Verify Apache Ivy
+
+```
+brew install ant
+ant
+```
+
+Filed [`IVY-1633`](https://issues.apache.org/jira/browse/IVY-1633) to provide fix for Apache Ivy.
